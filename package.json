@@ -1,0 +1,32 @@
+{
+  "name": "meteo-stats",
+  "version": "1.0.0",
+  "description": "Backend for remote meteo devices",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production nodemon -r esm -r dotenv/config src/index.js dotenv_config_path=.env",
+    "dev": "nodemon -r esm -r dotenv/config src/index.js dotenv_config_path=.env",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/arkotik/meteo-stats.git"
+  },
+  "author": "arkotik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arkotik/meteo-stats/issues"
+  },
+  "homepage": "https://github.com/arkotik/meteo-stats#readme",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "mariadb": "^2.5.3",
+    "sequelize": "^6.5.1",
+    "socket.io": "^4.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.7"
+  }
+}
