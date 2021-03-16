@@ -8,6 +8,7 @@ import models from './models';
 import App from './App';
 import DeviceController from './controllers/DeviceController';
 import { DataController } from './controllers';
+import { time } from '../lib/utils';
 
 
 export default function() {
@@ -42,6 +43,8 @@ export default function() {
       return;
     }
     await DataController.storeData(device.id, body);
+    device.last_activity = time();
+    await device.save({ fields: ['last_activity'] });
     res.send('POST OK');
     res.end();
   });

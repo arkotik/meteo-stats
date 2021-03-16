@@ -7,8 +7,4 @@ export default class DeviceController extends BaseController {
       where: { api_token }
     });
   }
-
-  static async setLastActivity(device_id) {
-    return Device.update({  });
-  }
 }
