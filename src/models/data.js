@@ -1,6 +1,6 @@
 import { modelOptions }     from '../../lib/defaults';
 
-export default (sequelize, DataTypes) => {
+export default function (sequelize, DataTypes) {
   const Data = sequelize.define('Data', {
     id: {
       type: DataTypes.INTEGER.UNSIGNED,
@@ -29,7 +29,7 @@ export default (sequelize, DataTypes) => {
     },
   }, {
     ...modelOptions,
-    tableName: 'task',
+    tableName: 'data',
   });
   Data.associate = function (models) {
     // associations can be defined here

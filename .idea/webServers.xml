@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="846978ce-cd72-44c0-bccb-a015287e5572" name="tazik" url="http://192.168.1.10">
+        <fileTransfer rootFolder="/data_arkotik/meteo/meteo-stats" accessType="SFTP" host="192.168.1.10" port="22" sshConfigId="92b3e4c2-8811-4232-af92-95dd5764c067" sshConfig="root@192.168.1.10:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
